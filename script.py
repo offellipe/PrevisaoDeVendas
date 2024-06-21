@@ -40,7 +40,7 @@ print(f"Coeficiente: {model.coef_}")
 
 # Prever as vendas para o mês de Dezembro (mes_numero = 12)
 previsao_dezembro = model.predict([[12]])
-print(f"Previsão de vendas para Dezembro: {previsao_dezembro[0]}")
+print(f"Previsão de vendas para Dezembro: {round(previsao_dezembro[0], 2)}")
 
 # Plot de Scatter com distribuição
 plt.figure(figsize=(10, 6))
